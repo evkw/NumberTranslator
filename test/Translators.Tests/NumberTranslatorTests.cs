@@ -39,8 +39,8 @@ namespace Translators.Tests
         }
 
         [Theory]
-        // [InlineData(new char[] { '0', '1' }, "One")]
-        // [InlineData(new char[] { '0', '8' }, "Eight")]
+        [InlineData(new char[] { '0', '1' }, "One")]
+        [InlineData(new char[] { '0', '8' }, "Eight")]
         [InlineData(new char[] { '1', '2' }, "Twelve")]
         [InlineData(new char[] { '2', '3' }, "Twenty Three")]
         [InlineData(new char[] { '3', '4' }, "Thirty Four")]
@@ -64,11 +64,11 @@ namespace Translators.Tests
         }
 
 
-                [Theory]
-        // [InlineData("12", "Twelve")]
-        // [InlineData("230", "Two Hundred and Thirty")]
-        // [InlineData("314", "Three Hundred and Fourteen")]
-        // [InlineData("457", "Four Hundred and Fifty Seven")]
+        [Theory]
+        [InlineData("12", "Twelve")]
+        [InlineData("230", "Two Hundred and Thirty")]
+        [InlineData("314", "Three Hundred and Fourteen")]
+        [InlineData("457", "Four Hundred and Fifty Seven")]
         [InlineData("9999", "Nine Thousand Nine Hundred and Ninety Nine")]
         [InlineData("99999", "Ninety Nine Thousand Nine Hundred and Ninety Nine")]
         [InlineData("999999", "Nine Million Nine Hundred and Ninety Nine Thousand Nine Hundred and Ninety Nine")]
